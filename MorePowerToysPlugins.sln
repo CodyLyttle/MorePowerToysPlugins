@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.PowerToys.Run.Plugin.Google", "Microsoft.PowerToys.Run.Plugin.Google\Microsoft.PowerToys.Run.Plugin.Google.csproj", "{72B1319C-7450-4D97-9F6C-66F5B98B8606}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleRunner", "ConsoleRunner\ConsoleRunner.csproj", "{EA0DA543-177E-4A0A-AE3C-4053BAF1BC53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72B1319C-7450-4D97-9F6C-66F5B98B8606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B1319C-7450-4D97-9F6C-66F5B98B8606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B1319C-7450-4D97-9F6C-66F5B98B8606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B1319C-7450-4D97-9F6C-66F5B98B8606}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA0DA543-177E-4A0A-AE3C-4053BAF1BC53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA0DA543-177E-4A0A-AE3C-4053BAF1BC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA0DA543-177E-4A0A-AE3C-4053BAF1BC53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA0DA543-177E-4A0A-AE3C-4053BAF1BC53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
