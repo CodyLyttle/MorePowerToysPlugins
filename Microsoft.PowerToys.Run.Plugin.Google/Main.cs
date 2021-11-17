@@ -8,19 +8,18 @@ namespace Microsoft.PowerToys.Run.Plugin.Google
     public class Main : IDisposable, IPlugin, IPluginI18n
     {
         private bool _disposed;
-        private string _iconPath;
         private PluginInitContext _context;
         
-        public string Name => "Web Search";
+        public string Name => "Google Search";
         
-        public string Description => "Search the web with your favourite engine";
+        public string Description => "Search google with Microsoft Edge.\r\n(default browser support coming soon)";
+        
+        // ReSharper disable once MemberCanBePrivate.Global
+        public string IconPath { get; private set; }
 
         public List<Result> Query(Query query)
         {
             var results = new List<Result>();
-
-            if (!string.IsNullOrEmpty(query.ActionKeyword))
-                return results;
 
             results.Add(CreateResult(query, false));
             results.Add(CreateResult(query, true));
@@ -74,7 +73,7 @@ namespace Microsoft.PowerToys.Run.Plugin.Google
             {
                 Title = query.Search,
                 SubTitle = subTitle,
-                IcoPath = _iconPath,
+                IcoPath = IconPath,
                 Action = x =>
                 {
                     GoogleSearch.OpenInEdge(query.Search, useIncognito);
@@ -90,7 +89,7 @@ namespace Microsoft.PowerToys.Run.Plugin.Google
         
         private void UpdateIconPath(Theme theme)
         {
-            _iconPath = theme == Theme.Light 
+            IconPath = theme == Theme.Light 
                 ? "Images/GoogleLight.png"
                 : "Images/GoogleDark.png";
         }
