@@ -1,0 +1,13 @@
+﻿{
+  "ID": "4331BB74478A11EC81D30242AC130003",
+  "ActionKeyword": "?",
+  "IsGlobal": false,
+  "Name": "Google",
+  "Author": "Cody Lyttle",
+  "Version": "1.0.0",
+  "Language": "csharp",
+  "Website": "https://aka.ms/powertoys",
+  "ExecuteFileName": "Microsoft.PowerToys.Run.Plugin.Google.dll",
+  "IcoPathDark": "Images\\GoogleDark.png",
+  "IcoPathLight": "Images\\GoogleLight.png"
+}

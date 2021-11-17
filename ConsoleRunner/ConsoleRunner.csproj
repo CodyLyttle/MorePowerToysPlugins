@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>preview</LangVersion>
+        <AssemblyName>ConsoleRunner</AssemblyName>
+        <RootNamespace>ConsoleRunner</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Microsoft.PowerToys.Run.Plugin.Google\Microsoft.PowerToys.Run.Plugin.Google.csproj" />
+    </ItemGroup>
+
+</Project>
